@@ -5,7 +5,7 @@ require 'money/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "money"
-  spec.version       = Money::VERSION
+  spec.version       = "0.1"
   spec.authors       = ["Deepak Lamichhane"]
   spec.email         = ["dlamichhane@hotmail.com"]
 
@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec"
 end
