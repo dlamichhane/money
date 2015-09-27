@@ -40,7 +40,6 @@ class Money
         converted_amount = amount
       else
         converted_amount = (@@exchange_rates["#{convert_to_currency}"] / @@exchange_rates["#{self.currency}"]) * amount
-        # converted_amount = (@@exchange_rates['EUR'].to_f / @@exchange_rates["#{convert_to_currency}"]) * amount
       end
       precision ? currency_precision(converted_amount, convert_to_currency) : converted_amount
     rescue Exception => e
